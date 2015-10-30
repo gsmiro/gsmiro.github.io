@@ -9,3 +9,7 @@
     -moz-border-radius: 50px;
     -webkit-boderder-radius: 50px;
 }
+
+.ghop .navbar-brand {
+    text-transform: none;
+}
