@@ -1,0 +1,11 @@
+.ghop header .intro-text .skills-small {
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ghop img.logo {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-boderder-radius: 50px;
+}
