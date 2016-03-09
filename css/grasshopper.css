@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
 
 BODY{
-    font-family: 'Roboto',sans-serif,'Arial'
+    font-family: 'Roboto',sans-serif,'Arial';
+    background: #343C45;
 }
 video {
     width: 100% !important;
@@ -54,10 +55,9 @@ video {
     margin: 0;
 }
 
-.first-row > * {
-    background-color: #343C45; 
+.first-row .profile {
+    padding-right: 5px;
 }
-
 .first-row .profile .top{
     height: 60px;
 }
