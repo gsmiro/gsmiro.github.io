@@ -44,7 +44,7 @@ video {
 .profile p.large {
     font-family: 'Orbitron','Roboto',sans-serif,'Arial';
     font-size: 3em;
-    margin-top: 30px;
+    margin-top: 20px;
     text-shadow: -6px 0px 3px #232629;
     color: white;
 }
@@ -52,26 +52,29 @@ video {
 .profile p b {
     font-family: 'Orbitron','Roboto',sans-serif,'Arial';
     color:#6C9E37;
-    text-shadow: -6px 0px 3px #232629;
+    /*text-shadow: -6px 0px 3px #232629;*/
 }
-.first-row {
-    /*height: 640px;*/
+.row{
     width: 100%;
     padding: 0;
     margin: 0;
 }
-
-.first-row .profile {
+.row-1{
+    height: 640px;
+}
+.row-1 .profile {
     padding-right: 5px;
 }
-
-
-.first-row .video {
+.row-1 .video {
     height: 100%;
     background-color: black;
     box-shadow: -6px 0px 3px #232629;
 }
 
-.first-row .top {
-    padding-top: 1.5em;
+.row-1 .top {
+    padding-top: 20px;
+}
+
+.row-2 {
+    background-color: white;
 }

@@ -1,0 +1,27 @@
+{
+  "name": "gsmiro.github.io",
+  "description": "Gabriel Serralha Miró's resume",
+  "main": "index.html",
+  "authors": [
+    "Gabriel Serralha Miró"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "page",
+    "resume"
+  ],
+  "homepage": "https://github.com/gsmiro/gsmiro.github.io",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

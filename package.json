@@ -1,7 +1,7 @@
 {
   "name": "gsmiro.github.io",
   "version": "1.0.0",
-  "description": "Gabriel Serralha Miró's online resumé",
+  "description": "Gabriel Serralha Miró's resume",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,7 @@
   "keywords": [
     "github",
     "page",
-    "resumé"
+    "resume"
   ],
   "author": "Gabriel Serralha Miró",
   "license": "MIT",
@@ -22,5 +22,8 @@
   },
   "homepage": "https://github.com/gsmiro/gsmiro.github.io#readme",
   "dependencies": {
+    "bower": ">=1.7",
+    "node-sass": ">=3.4.2",
+    "grunt": ">=0.4.5"
   }
 }
