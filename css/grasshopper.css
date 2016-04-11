@@ -74,7 +74,9 @@ video {
     animation-duration: 6s;
     animation-iteration-count: 1;
 }
-
+.image p {
+    color: lightgray;
+}
 .image p.large {
     font-family: 'Orbitron','Roboto',sans-serif,'Arial';
     font-size: 3em;
