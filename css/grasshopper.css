@@ -5,43 +5,77 @@ BODY{
     font-family: 'Roboto',sans-serif,'Arial';
     background: #343C45;
 }
+@media (min-width: 1200px){
+    video {
+        width: 976px;
+    }
+    .image img {
+        margin-left: 64%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    video {
+        width: 976px;
+    }
+    .image img {
+        margin-left: 64%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    video {
+        width: 100%;
+    }
+    .image img {
+        margin-left: 64%;
+    }
+}
+@media (max-width: 767px){
+    video {
+        width: 100%;
+    }
+    .image img {
+        width: 35.5%;
+        margin-left: 64%;
+    }
+}
+
 video {
-    width: 100% !important;
     height: auto !important;
 }
 
-.profile {
-    color: #CED3D9;
-}
-.profile * {
-    margin-left: 15%;
-}
-
-.profile * > * {
-    margin: 0px;
-}
-.profile img {
-    width: 45%;
-    border-radius: 100%;
-    animation-name: img;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    box-shadow: -6px 0px 3px #232629;
-}
 @keyframes img {
-    from {
+    0% {
         opacity: 0;
     }
-    to {
+    50% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
 
-.profile p {
+.image {
+    position: absolute;
+    top: 10px;
+    width: 95%;
+}
+.image img {
+    border-radius: 100%;
+    animation-name: img;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    /*box-shadow: -6px 0px 3px #232629;*/
+}
+.image p {
+    text-align: right;
     font-size: 1.5em;
+    animation-name: img;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
 }
 
-.profile p.large {
+.image p.large {
     font-family: 'Orbitron','Roboto',sans-serif,'Arial';
     font-size: 3em;
     margin-top: 20px;
@@ -49,7 +83,7 @@ video {
     color: white;
 }
 
-.profile p b {
+.image p b {
     font-family: 'Orbitron','Roboto',sans-serif,'Arial';
     color:#6C9E37;
     /*text-shadow: -6px 0px 3px #232629;*/
