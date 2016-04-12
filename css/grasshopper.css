@@ -3,13 +3,19 @@
 
 BODY{
     font-family: 'Roboto',sans-serif,'Arial';
-    background: #343C45;
+    background: white/*#343C45*/;
+    color: gray;
+}
+BLOCKQUOTE{
+    color: black;
+    font-style: italic;
 }
 @media (min-width: 1200px){
     video {
         width: 976px;
     }
     .image img {
+        margin-top: 100px;
         margin-left: 64%;
     }
     .image p {
@@ -24,6 +30,7 @@ BODY{
         width: 976px;
     }
     .image img {
+        margin-top: 100px;
         margin-left: 64%;
     }
     .image p {
@@ -38,6 +45,7 @@ BODY{
         width: 100%;
     }
     .image img {
+        margin-top: 50px;
         margin-left: 64%;
     }
     .image p {
@@ -52,6 +60,7 @@ BODY{
         width: 100%;
     }
     .image img {
+        margin-top: 25px;
         width: 35.5%;
         margin-left: 64%;
     }
@@ -86,6 +95,7 @@ video {
 }
 .image img {
     border-radius: 100%;
+    transition: margin 0.5s;
     animation-name: img;
     animation-duration: 6s;
     animation-iteration-count: 1;
@@ -119,10 +129,9 @@ video {
     margin: 0;
 }
 
-.row-1 .video {
-    height: 100%;
+.row-1 {
     background-color: black;
-    box-shadow: -6px 0px 3px #232629;
+    box-shadow: 3px 3px 3px 3px #232629;
 }
 
 .row-2 {
