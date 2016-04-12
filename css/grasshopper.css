@@ -12,6 +12,12 @@ BODY{
     .image img {
         margin-left: 64%;
     }
+    .image p {
+        font-size: 1.5em;
+    }
+    .image p.large {
+         font-size: 3em;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px){
     video {
@@ -19,6 +25,12 @@ BODY{
     }
     .image img {
         margin-left: 64%;
+    }
+    .image p {
+        font-size: 1.5em;
+    }
+    .image p.large {
+         font-size: 3em;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
@@ -28,6 +40,12 @@ BODY{
     .image img {
         margin-left: 64%;
     }
+    .image p {
+        font-size: 1.5em;
+    }
+    .image p.large {
+         font-size: 3em;
+    }
 }
 @media (max-width: 767px){
     video {
@@ -36,6 +54,12 @@ BODY{
     .image img {
         width: 35.5%;
         margin-left: 64%;
+    }
+    .image p {
+        font-size: 1em;
+    }
+    .image p.large {
+        font-size: 2em;
     }
 }
 
@@ -69,17 +93,16 @@ video {
 }
 .image p {
     text-align: right;
-    font-size: 1.5em;
     animation-name: img;
     animation-duration: 6s;
     animation-iteration-count: 1;
 }
 .image p {
     color: lightgray;
+    transition: font-size 0.5s;
 }
 .image p.large {
     font-family: 'Orbitron','Roboto',sans-serif,'Arial';
-    font-size: 3em;
     margin-top: 20px;
     text-shadow: -6px 0px 3px #232629;
     color: white;
@@ -95,20 +118,11 @@ video {
     padding: 0;
     margin: 0;
 }
-.row-1{
-    height: 640px;
-}
-.row-1 .profile {
-    padding-right: 5px;
-}
+
 .row-1 .video {
     height: 100%;
     background-color: black;
     box-shadow: -6px 0px 3px #232629;
-}
-
-.row-1 .top {
-    padding-top: 20px;
 }
 
 .row-2 {
