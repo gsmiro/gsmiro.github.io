@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+$font-family-sans-serif: 'Roboto',sans-serif,'Arial';
+
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+BODY{
+    background: white/*#343C45*/;
+    color: gray;
+}
+BLOCKQUOTE{
+    color: black;
+    font-style: italic;
+}
+
+@mixin image($video,$mtop,$mleft,$fsize) {
+   video {
+        width: $video;
+    }
+    .image{ 
+        img {
+            margin-top: $mtop;
+            margin-left: $mleft;
+        }
+        p {
+            font-size: $fsize/2;
+            
+        }
+        p.large {
+            font-size: $fsize;
+        }
+    }    
+}
+@media (min-width: 1200px){
+    @include image(976px,100px,64%,3em);
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    @include image(976px,100px,64%,3em);
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+    @include image(976px,50px,64%,3em);
+}
+@media (max-width: 767px){
+    @include image(100%,25px,64%,2em);
+    .image img {
+        width: 35.5%;
+    }
+}
+
+video {
+    height: auto !important;
+}
+
+@keyframes img {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.image {
+    position: absolute;
+    top: 10px;
+    width: 95%;
+}
+.image img {
+    border-radius: 100%;
+    transition: margin 0.5s;
+    animation-name: img;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    /*box-shadow: -6px 0px 3px #232629;*/
+}
+.image p {
+    text-align: right;
+    animation-name: img;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+.image p {
+    color: lightgray;
+    transition: font-size 0.5s;
+}
+.image p.large {
+    font-family: 'Orbitron',$font-family-sans-serif;
+    margin-top: 20px;
+    text-shadow: -6px 0px 3px #232629;
+    color: white;
+}
+
+.image p b {
+    font-family: 'Orbitron','Roboto',sans-serif,'Arial';
+    color:#6C9E37;
+    /*text-shadow: -6px 0px 3px #232629;*/
+}
+.row{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.row-1 {
+    background-color: black;
+    box-shadow: 3px 3px 3px 3px #232629;
+}
+
+.row-2 {
+    background-color: white;
+}
