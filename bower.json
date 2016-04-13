@@ -22,6 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "~3.3.6"
+    "bootstrap-sass": "~3.3.6",
+    "polymer": "Polymer/polymer#^1.4.0"
   }
 }
