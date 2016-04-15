@@ -12,5 +12,9 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "bootstrap": "^3.3.6"
   }
 }
