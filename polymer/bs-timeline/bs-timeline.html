@@ -1,4 +1,5 @@
-<dom-module id="timeline">
+<link rel="import" href="../polymer/polymer.html">
+<dom-module id="bs-timeline">
     <template>
         <div class="[[rowClass]]">
             <div class="[[dateColClass]]">
@@ -13,7 +14,7 @@
     </template>
     <script>
         Polymer({
-            is: 'timeline',
+            is: 'bs-timeline',
             properties: {
                 rowClass: {
                     type: String,
@@ -38,7 +39,6 @@
             }
         });
     </script>
-    <link rel="stylesheet" href="timeline.css"/>
-   
-    
+    <link rel="stylesheet" href="bs-timeline.css"/>
+
 </dom-module>
