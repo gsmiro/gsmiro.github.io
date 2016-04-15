@@ -4,10 +4,6 @@ $font-family-sans-serif: 'Roboto',sans-serif,'Arial';
 
 @import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 
-BODY{
-    background: white/*#343C45*/;
-    color: gray;
-}
 BLOCKQUOTE{
     color: black;
     font-style: italic;
@@ -68,38 +64,38 @@ video {
     position: absolute;
     top: 10px;
     width: 95%;
+    img {
+        border-radius: 100%;
+        transition: margin 0.5s;
+        animation-name: img;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        /*box-shadow: -6px 0px 3px #232629;*/
+    }
+    p {
+        color: lightgray;
+        text-align: right;
+        transition: font-size 0.5s;
+        animation-name: img;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        b {
+            font-family: 'Orbitron','Roboto',sans-serif,'Arial';
+            color:#6C9E37;
+            /*text-shadow: -6px 0px 3px #232629;*/
+        }
+    }
+    p.large {
+        font-family: 'Orbitron',$font-family-sans-serif;
+        margin-top: 20px;
+        text-shadow: -6px 0px 3px #232629;
+        color: white;
+    }
 }
-.image img {
-    border-radius: 100%;
-    transition: margin 0.5s;
-    animation-name: img;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
-    /*box-shadow: -6px 0px 3px #232629;*/
+center > h1 {
+    font-family: 'Orbitron';
 }
-.image p {
-    text-align: right;
-    animation-name: img;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
-}
-.image p {
-    color: lightgray;
-    transition: font-size 0.5s;
-}
-.image p.large {
-    font-family: 'Orbitron',$font-family-sans-serif;
-    margin-top: 20px;
-    text-shadow: -6px 0px 3px #232629;
-    color: white;
-}
-
-.image p b {
-    font-family: 'Orbitron','Roboto',sans-serif,'Arial';
-    color:#6C9E37;
-    /*text-shadow: -6px 0px 3px #232629;*/
-}
-.row{
+.row {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -109,7 +105,15 @@ video {
     background-color: black;
     box-shadow: 3px 3px 3px 3px #232629;
 }
+.row-3 {
+    p {
+        color: $gray-light;
+    }
+}
 
 .row-2 {
-    background-color: white;
+    //background-color: white;
+}
+.row-4 {
+    background-color: #eee;
 }

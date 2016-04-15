@@ -1,0 +1,44 @@
+<dom-module id="timeline">
+    <template>
+        <div class="[[rowClass]]">
+            <div class="[[dateColClass]]">
+                <div clas="dateWrap">
+                    [[date]]
+                </div>
+            </div>
+            <div class="[[labelColClass]]">
+                [[label]]
+            </div>
+        </div>
+    </template>
+    <script>
+        Polymer({
+            is: 'timeline',
+            properties: {
+                rowClass: {
+                    type: String,
+                    value: 'row'
+                },
+                dateColClass: {
+                    type: String,
+                    value: 'col-md-1'
+                },
+                labelColClass: {
+                    type: String,
+                    value: 'col-md-11'
+                },
+                date: {
+                    type: Date,
+                    value: new Date()
+                },
+                label: {
+                    type: String,
+                    value: 'n/a'
+                }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="timeline.css"/>
+   
+    
+</dom-module>

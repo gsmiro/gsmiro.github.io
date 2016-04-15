@@ -5819,10 +5819,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-BODY {
-  background: white;
-  color: gray; }
-
 BLOCKQUOTE {
   color: black;
   font-style: italic; }
@@ -5888,35 +5884,32 @@ video {
   position: absolute;
   top: 10px;
   width: 95%; }
+  .image img {
+    border-radius: 100%;
+    transition: margin 0.5s;
+    animation-name: img;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    /*box-shadow: -6px 0px 3px #232629;*/ }
+  .image p {
+    color: lightgray;
+    text-align: right;
+    transition: font-size 0.5s;
+    animation-name: img;
+    animation-duration: 6s;
+    animation-iteration-count: 1; }
+    .image p b {
+      font-family: 'Orbitron','Roboto',sans-serif,'Arial';
+      color: #6C9E37;
+      /*text-shadow: -6px 0px 3px #232629;*/ }
+  .image p.large {
+    font-family: "Orbitron", "Roboto", sans-serif, "Arial";
+    margin-top: 20px;
+    text-shadow: -6px 0px 3px #232629;
+    color: white; }
 
-.image img {
-  border-radius: 100%;
-  transition: margin 0.5s;
-  animation-name: img;
-  animation-duration: 6s;
-  animation-iteration-count: 1;
-  /*box-shadow: -6px 0px 3px #232629;*/ }
-
-.image p {
-  text-align: right;
-  animation-name: img;
-  animation-duration: 6s;
-  animation-iteration-count: 1; }
-
-.image p {
-  color: lightgray;
-  transition: font-size 0.5s; }
-
-.image p.large {
-  font-family: "Orbitron", "Roboto", sans-serif, "Arial";
-  margin-top: 20px;
-  text-shadow: -6px 0px 3px #232629;
-  color: white; }
-
-.image p b {
-  font-family: 'Orbitron','Roboto',sans-serif,'Arial';
-  color: #6C9E37;
-  /*text-shadow: -6px 0px 3px #232629;*/ }
+center > h1 {
+  font-family: 'Orbitron'; }
 
 .row {
   width: 100%;
@@ -5927,5 +5920,8 @@ video {
   background-color: black;
   box-shadow: 3px 3px 3px 3px #232629; }
 
-.row-2 {
-  background-color: white; }
+.row-3 p {
+  color: #777777; }
+
+.row-4 {
+  background-color: #eee; }
