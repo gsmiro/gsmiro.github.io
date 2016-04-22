@@ -24,6 +24,9 @@
     </style>
     <script type="text/javascript">
         var model = {
+            "labels": {
+              "heading": 'Position'  
+            },
             "timeline":[
                 { 
                     date: 2012,
@@ -129,7 +132,7 @@
             <center>
                 <h1>Experience</h1>
             </center>
-            <bs-timeline items="{{model.timeline}}" >
+            <bs-timeline items="{{model.timeline}}" labels="{{model.labels}}">
             </bs-timeline>
         </div>
     </div>

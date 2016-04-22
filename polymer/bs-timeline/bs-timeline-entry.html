@@ -21,6 +21,13 @@
             :host .lbl > section {
                 padding-left: 3%;
             }
+            :host .lbl p.heading > label {
+                text-transform: lowercase;
+                color: rgb(171,171,171);
+                font-style: italic;
+                font-weight: normal;
+                font-size: 0.9em;
+            }
         </style>
         <div class$="[[rowClass]]">
             <div class$="[[dateColClass]]">
@@ -30,7 +37,7 @@
             <div class$="lbl [[labelColClass]]">
                 <label>{{title}}</label> <i>{{subtitle}}</i>
                 <section>
-                    <p>{{heading}}</p>
+                    <p class='heading'><label>{{headingLabel}}</label>&nbsp;&nbsp;{{heading}}</p>
                     <p>{{description}}</p>
                 </section>
             </div>
@@ -57,21 +64,20 @@
                     value: 'now'
                 },
                 title: {
-                    type: String,
-                    value: ''
+                    type: String
                 },
                 subtitle: {
-                    type: String,
-                    value: ''
+                    type: String
                 },
                 heading: {
-                    type: String,
-                    value: ''
+                    type: String
                 },
                 description: {
-                    type: String,
-                    value: ''
+                    type: String
                 },
+                headingLabel: {
+                    type:String
+                }
             }
         });
     </script>
