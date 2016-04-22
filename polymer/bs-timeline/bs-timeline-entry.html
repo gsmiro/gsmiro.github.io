@@ -1,0 +1,78 @@
+<dom-module id="bs-timeline-entry">
+    <template>
+        <style>
+            :host .dot {
+                border-radius: 100%;
+                background-color: lightgray;
+                width: 10px;
+                height: 10px;
+                position: relative;
+                left: -37px;
+                top:15px;
+            }
+            :host .lbl {
+                padding-top: 10px;
+            }
+            :host .lbl > i {
+                font-size: smaller;
+                font-weight: normal;
+                color: gray;
+            }
+            :host .lbl > section {
+                padding-left: 3%;
+            }
+        </style>
+        <div class$="[[rowClass]]">
+            <div class$="[[dateColClass]]">
+                <div class="dot"></div>
+                {{date}}
+            </div>
+            <div class$="lbl [[labelColClass]]">
+                <label>{{title}}</label> <i>{{subtitle}}</i>
+                <section>
+                    <p>{{heading}}</p>
+                    <p>{{description}}</p>
+                </section>
+            </div>
+        </div>
+    </template>
+    <script>
+          Polymer({
+            is: 'bs-timeline-entry',
+            properties: {
+                rowClass: {
+                    type: String,
+                    value: 'row'
+                },
+                dateColClass: {
+                    type: String,
+                    value: 'col-xs-1'
+                },
+                labelColClass: {
+                    type: String,
+                    value: 'col-xs-11'
+                },
+                date: {
+                    type: String,
+                    value: 'now'
+                },
+                title: {
+                    type: String,
+                    value: ''
+                },
+                subtitle: {
+                    type: String,
+                    value: ''
+                },
+                heading: {
+                    type: String,
+                    value: ''
+                },
+                description: {
+                    type: String,
+                    value: ''
+                },
+            }
+        });
+    </script>
+</dom-module>

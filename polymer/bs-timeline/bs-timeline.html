@@ -1,27 +1,42 @@
 <dom-module id="bs-timeline">
     <template>
+        <link rel="import" href="bs-timeline-entry.html">
+    
         <style>
-            .dateWrap {
-                border: 0.5px solid lightgrey;
-                border-radius: 100%;
-                box-shadow: 0px 2px 0px 0px grey;
-                text-align: center;
-                padding-bottom: 100%;
-                height: 0;
+            :host #line {
+                border-left: 3px solid lightgray;
             }
-            .dateWrap > div {
-                display: block;
-                padding-top: 45%;
+            :host > div.row {
+                @apply(--bs-timeline-background);
             }
         </style>
-        <div class$="[[rowClass]]">
-            <div class$="[[dateColClass]]">
-                <div class="dateWrap">
-                    [[date]]
-                </div>
+        <div class="row">
+            <div class="col-md-1">
             </div>
-            <div class$="[[labelColClass]]">
-                [[label]]
+            <div id="line" class="col-md-11">
+                <bs-timeline-entry
+                                   date="{{now}}"
+                                   title="{{title}}"
+                                   subtitle="{{subtitle}}"
+                                   heading="{{heading}}"
+                                   description="{{description}}"
+                                   row-class="{{rowClass}}"
+                                   date-col-class="{{dateColClass}}"
+                                   label-col-class="{{labelColClass}}">
+                    </bs-timeline-entry>
+                                   
+                <template is="dom-repeat" items="{{items}}">
+                    <bs-timeline-entry
+                                   date="{{item.date}}"
+                                   title="{{item.title}}"
+                                   subtitle="{{item.subtitle}}"
+                                   heading="{{item.heading}}"
+                                   description="{{item.description}}"
+                                   row-class="{{rowClass}}"
+                                   date-col-class="{{dateColClass}}"
+                                   label-col-class="{{labelColClass}}">
+                    </bs-timeline-entry>    
+                </template>
             </div>
         </div>
     </template>
@@ -35,20 +50,35 @@
                 },
                 dateColClass: {
                     type: String,
-                    value: 'col-md-1'
+                    value: 'col-xs-1'
                 },
                 labelColClass: {
                     type: String,
-                    value: 'col-md-11'
+                    value: 'col-xs-11'
                 },
-                date: {
-                    type: String,
-                    value: 'YYYY'
+                items: {
+                    type: Array
                 },
-                label: {
+                now: {
                     type: String,
-                    value: 'n/a'
-                }
+                    value: 'now'
+                },
+                title: {
+                    type: String,
+                    value: ''
+                },
+                subtitle: {
+                    type: String,
+                    value: ''
+                },
+                heading: {
+                    type: String,
+                    value: ''
+                },
+                description: {
+                    type: String,
+                    value: ''
+                },
             }
         });
     </script>

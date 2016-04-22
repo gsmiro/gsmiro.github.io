@@ -5,12 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Gabriel Serralha Miró online resume </title>
-    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/grasshopper.css"/>
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
     <link rel="import" href="bower_components/polymer/polymer.html">
     <link rel="import" href="polymer/bs-timeline/bs-timeline.html">
+    <style is="custom-style">
+        :root {
+             --bs-timeline-background: {
+                background-image: url("../img/pc.svg");   
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                background-position: 90% 90%;
+                background-origin: content-box;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        var model = {
+            "timeline":[
+                { 
+                    date: 2012,
+                    title: 'Metaway',
+                    heading: 'Software Architect and Agile Coach',
+                    description: ''
+                },
+                {
+                    date: 2008,
+                    title: 'Automatic Data Processing',
+                    heading: 'Software Specialist',
+                    description: ''
+                },
+                { 
+                    date: 2006,
+                    title: 'Tools & Technologies',
+                    heading: 'Software Engineer alocated at HP',
+                    description: ''
+                },
+                {
+                    date:2005,
+                    title: 'Neogrid',
+                    subtitle:'formerly Mercador',
+                    heading: 'Intern',
+                    description: ''
+                },
+                {
+                    date:2003,
+                    title: 'Universidade Federal do Rio Grande do Sul Data Center',
+                    heading: 'Intern',
+                    description: ''
+                }
+           ]
+        }
+        
+        window.addEventListener("load", function load(event){
+            window.removeEventListener("load", load, false); //remove listener, no longer needed
+            var t = document.querySelector('#t');
+            t.model = model;
+        },false);
+    </script>
 </head>
 <body>
+<template id="t" is="dom-bind">
     <div class="row row-1">
         <div class="col-md-12 video">
             <video autoplay loop poster="img/poster.png">
@@ -31,7 +88,7 @@
             </div>    
         </div>
     </div>
-    <div class="row row-2">
+    <div class="row">
         <div class="col-md-12">
             <center>
             <h1>About Me</h1>
@@ -69,12 +126,14 @@
     <section>
     <div class="row row-4">
         <div class="col-md-12">
-            <center><h1>Experience</h1></center>
-            <div class="row">
-                <bs-timeline></bs-timeline>
-            </div>
+            <center>
+                <h1>Experience</h1>
+            </center>
+            <bs-timeline items="{{model.timeline}}" >
+            </bs-timeline>
         </div>
     </div>
     </section>
+</template>
 </body>
 </html>
