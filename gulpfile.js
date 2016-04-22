@@ -8,8 +8,3 @@ gulp.task('styles', function(){
     .pipe(sass())
     .pipe(gulp.dest('css')) 
 });
-gulp.task('polymer', function(){
-  return gulp.src('polymer/bs-timeline/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('polymer/bs-timeline')) 
-});
