@@ -11,7 +11,10 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.0.0"
+    "polymer": "Polymer/polymer#^1.0.0",
+    "waypoints": "^4.0.0",
+    "velocity": "^1.0",
+    "zepto": "^1.1.6"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",

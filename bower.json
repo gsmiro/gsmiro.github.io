@@ -23,7 +23,6 @@
   ],
   "dependencies": {
     "bootstrap-sass": "~3.3.6",
-    "polymer": "Polymer/polymer#^1.0.0",
-    "scrollmagic": "^2.0.5"
+    "polymer": "Polymer/polymer#^1.0.0"
   }
 }
