@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/gsmiro/gsmiro.github.io#readme",
   "dependencies": {
-    "bower": "^1.7"
+    "bower": "^1.7.9"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
